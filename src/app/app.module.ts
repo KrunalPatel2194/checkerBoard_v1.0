@@ -3,13 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SquareComponent } from './square/square.component';
+import { CheckerboardComponent } from './checkerboard/checkerboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SquareComponent,
+    CheckerboardComponent
   ],
   imports: [
-    BrowserModule,
+BrowserModule,
     AppRoutingModule
   ],
   providers: [],

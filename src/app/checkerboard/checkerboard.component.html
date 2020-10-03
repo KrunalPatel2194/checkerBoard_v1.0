@@ -1,0 +1,8 @@
+<div class ="board">
+    <div class = "square" *ngFor = "let item of arrayOne(64); let i = index;">
+        <div class="wrapper">
+            <app-square [white] ="isWhite(pos)" *ngIf = "xy(i) as pos" id="{{i + 1}}" (itemClicked) ="boxClicked($event)"></app-square>
+        </div>
+    </div>
+</div>
+<h5>Elements Clicked :</h5> <p *ngFor="let i of itemsClicked" style="color: red; display: inline-block; padding-left: 6px;"><span>{{i}}</span></p>
